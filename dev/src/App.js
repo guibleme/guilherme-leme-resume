@@ -44,7 +44,7 @@ function App() {
         </section>
         <section className="employment-section-container">
           <h3><span className="section-title">EMPLOYMENT HISTORY</span></h3>
-          {employmentBlock('Feb 2019 - Sep 2020', 'Product designer and software developer', ' Maxicon Systems', [
+          {employmentBlock('Feb 2019 - present', 'Product designer and software developer', ' Maxicon Systems', [
             `Product design (problem benchmarking/brainstorming, solution refinement using design thinking, prototype development and product adherence validation)`,
             'Software analysis and specification (project documents, flow charts, UML Charts)',
             'User interface design (Adobe XD, Figma, Affinity Designer)',
@@ -66,8 +66,8 @@ function App() {
         </section>
         <section className="education-section-container">
           <h3><span className="section-title">EDUCATION</span></h3>
-          {educationBlock('Aug 2010 - Jan 2020', 'BSc. Electronic Engineering, Federal University of Technology – Paraná', 'Toledo, Paraná - Brazil')}
-          {educationBlock('Jan 2017 - Jan 2020', 'BTech. System Analysis and Developement, University of Paraná', 'Toledo, Paraná - Brazil')}
+          {educationBlock('Aug 2010 - Dec 2019', 'BSc. Electronic Engineering, Federal University of Technology – Paraná', 'Toledo, Paraná - Brazil')}
+          {educationBlock('Jan 2017 - Dec 2019', 'BTech. System Analysis and Developement, University of Paraná', 'Toledo, Paraná - Brazil')}
           {educationBlock('Aug 2013 - Dec 2014', 'Electrical and Computer Engineering, University of Sydney', 'Sydney, NSW - Australia')}
         </section>
         <section className="skills-section-container">
