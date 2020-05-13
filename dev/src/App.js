@@ -1,0 +1,104 @@
+import { profileDescription } from './profileDescription';
+import { employmentBlock } from './employmentBlock';
+import { educationBlock } from './educationBlock';
+import { skillBlock } from './skillBlock';
+import React from 'react';
+// import logo from './logo.svg';
+import square from './square.svg';
+import './App.css';
+
+function App() {
+  return (
+    // <div className="App">
+    //   <header className="App-header">
+    //     <img src={logo} className="App-logo" alt="logo" />
+    //     <p>
+    //       Edit <code>src/App.js</code> and save to reload.
+    //     </p>
+    //     <a
+    //       className="App-link"
+    //       href="https://reactjs.org"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //     >
+    //       Learn React
+    //     </a>
+    //   </header>
+    // </div>
+    <div className="app-body">
+      <header className="app-header">
+        <div className="title-container">
+          <h1>
+            Guilherme Barbosa Leme
+          </h1>
+          <h5>
+            Front-end Engineer, Product Designer
+          </h5>
+        </div>
+        <div className="header-logo-container">
+          <img src={square} className="header-logo"></img>
+        </div>
+      </header>
+      <div className="contact-info-container">
+        <div className="contact-info--block">
+          <div><b>Address</b></div>
+          <div>887 Eça de Queirós Street, 85905-080, Cascavel, Paraná - Brazil</div>
+        </div>
+        <div className="contact-info--block">
+          <div><b>Telefone</b></div>
+          <div>+55 45 99931-2339</div>
+        </div>
+        <div className="contact-info--block">
+          <div><b>Email</b></div>
+          <div>guibleme@gmail.com</div>
+        </div>
+      </div>
+      <div className="resume-parts-container">
+        <section className="profile-section-container">
+          <h3><span className="section-title">01 SUMMARY</span></h3>
+          {profileDescription([`Energetic front-end engineer and designer, with 2+ years of fulltime experience, from general web apps to ERP softwares. Implemented a design system and design specification workflow at Maxicon Systems.`, `Been working as a Product designer and system analyst for the last eight months, providing scope definition and requirement specification, with necessary documentation (flowcharts, UML charts), as well as protoyping new products.`, `Freelance as interface designer and user experience consultant since 2018.`])}
+        </section>
+        <section className="employment-section-container">
+          <h3><span className="section-title">02 EMPLOYMENT HISTORY</span></h3>
+          {employmentBlock('Feb 2019 - Sep 2020', 'Product designer and software developer', ' Maxicon Systems', [
+            'Product design',
+            'Software analysis and specification',
+            'User interface design (Adobe XD, Figma, Affinity Designer)',
+            'User experience analysis (A/B tests, supervised and unsupervised usability surveys)',
+            'Prototype development (Adobe XD, Figma)',
+            'Front-end engineering (Angular 6 + Node and Java backend + Mongo, PostgreSQL and OracleDB)'])}
+          {employmentBlock('Sep 2016 - Jan 2018', 'UI Designer and front-end developer', 'Wing Agency', [
+            'User interface design (Adobe Photoshop, Sketch)',
+            'User experience analysis (A/B tests, supervised usability surveys)',
+            'Prototype development (inDesign, Adobe Photoshop)',
+            'User interface development (Angular.Js, Angular 2)',
+            'Requirement specification and sprint management (Trello, Jira)'
+          ])}
+          {employmentBlock('Jul 2014 - Dec 2014', 'Data visualization Internship', `NICTA's (National Information Technology Australia) Inteligent Pipes Project`, [
+            '2D data visualization, using Google Maps API',
+            'Matlab software development',
+            'Data processing and conversion',
+          ])}
+        </section>
+        <section className="education-section-container">
+          <h3><span className="section-title">03 EDUCATION</span></h3>
+          {educationBlock('Aug 2010 - Jan 2020', 'BSc. Electronic Engineering, Federal University of Technology – Paraná', 'Toledo, Paraná - Brazil')}
+          {educationBlock('Jan 2017 - Jan 2020', 'BTech. System Analysis and Developement, University of Paraná', 'Toledo, Paraná - Brazil')}
+          {educationBlock('Aug 2013 - Dec 2014', 'Electrical and Computer Engineering, University of Sydney', 'Sydney, NSW - Australia')}
+        </section>
+        <section className="skills-section-container">
+          <h3><span className="section-title">04 SKILLS</span></h3>
+          <div className="skills-grid-container">
+            {skillBlock('Prototyping', 'w90')}
+            {skillBlock('Front-end development', 'w80')}
+            {skillBlock('Product design/analysis', 'w70')}
+            {skillBlock('Project documenting', 'w60')}
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+
+}
+
+export default App;
