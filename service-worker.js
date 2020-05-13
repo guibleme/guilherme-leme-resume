@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "./guilherme-leme-resume/precache-manifest.c855c9bf62dbe2d71c0cedbbc28645d3.js"
+  "./guilherme-leme-resume/precache-manifest.84e4d84f83ab2cfcf9e86013d494524c.js"
 );
 
 self.addEventListener('message', (event) => {

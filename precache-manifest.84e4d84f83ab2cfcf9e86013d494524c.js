@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b1f7d602dee8c37e79cde0cc5ad9606e",
+    "revision": "2a747c69ad5079933ac72d4e8cd6c173",
     "url": "./guilherme-leme-resume/index.html"
   },
   {
-    "revision": "6c6e131c72db27e1b8a5",
+    "revision": "8f29b540aa6cee37a4c6",
     "url": "./guilherme-leme-resume/static/css/main.690e0c34.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./guilherme-leme-resume/static/js/2.735e11ef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6c6e131c72db27e1b8a5",
-    "url": "./guilherme-leme-resume/static/js/main.ee97f6fa.chunk.js"
+    "revision": "8f29b540aa6cee37a4c6",
+    "url": "./guilherme-leme-resume/static/js/main.9e4e8c29.chunk.js"
   },
   {
     "revision": "6d4f7fabc5a111d75df0",
