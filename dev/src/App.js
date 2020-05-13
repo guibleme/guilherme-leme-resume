@@ -9,22 +9,6 @@ import './App.css';
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
     <div className="app-body">
       <header className="app-header">
         <div className="title-container">
@@ -40,14 +24,14 @@ function App() {
         </div>
       </header>
       <div className="contact-info-container">
-        <div className="contact-info--block">
+        {/* <div className="contact-info--block">
           <div><b>Address</b></div>
           <div>887 Eça de Queirós Street, 85905-080, Cascavel, Paraná - Brazil</div>
         </div>
         <div className="contact-info--block">
           <div><b>Telefone</b></div>
           <div>+55 45 99931-2339</div>
-        </div>
+        </div> */}
         <div className="contact-info--block">
           <div><b>Email</b></div>
           <div>guibleme@gmail.com</div>
@@ -55,14 +39,14 @@ function App() {
       </div>
       <div className="resume-parts-container">
         <section className="profile-section-container">
-          <h3><span className="section-title">01 SUMMARY</span></h3>
-          {profileDescription([`Energetic front-end engineer and designer, with 2+ years of fulltime experience, from general web apps to ERP softwares. Implemented a design system and design specification workflow at Maxicon Systems.`, `Been working as a Product designer and system analyst for the last eight months, providing scope definition and requirement specification, with necessary documentation (flowcharts, UML charts), as well as protoyping new products.`, `Freelance as interface designer and user experience consultant since 2018.`])}
+          <h3><span className="section-title">SUMMARY</span></h3>
+          {profileDescription([`Energetic front-end engineer and product designer, with 2+ years of full-time experience, from general web apps to ERP softwares. Implemented a design system and design specification workflow at Maxicon Systems.`, `Has been working as a Product designer and system analyst for the last eight months, providing scope definition and requirement specification, with necessary documentation (flowcharts, UML charts), as well as protoyping new products.`, `Freelance as interface designer and user experience consultant since 2018.`])}
         </section>
         <section className="employment-section-container">
-          <h3><span className="section-title">02 EMPLOYMENT HISTORY</span></h3>
+          <h3><span className="section-title">EMPLOYMENT HISTORY</span></h3>
           {employmentBlock('Feb 2019 - Sep 2020', 'Product designer and software developer', ' Maxicon Systems', [
-            'Product design',
-            'Software analysis and specification',
+            `Product design (problem benchmarking/brainstorming, solution refinement using design thinking, prototype development and product adherence validation)`,
+            'Software analysis and specification (project documents, flow charts, UML Charts)',
             'User interface design (Adobe XD, Figma, Affinity Designer)',
             'User experience analysis (A/B tests, supervised and unsupervised usability surveys)',
             'Prototype development (Adobe XD, Figma)',
@@ -81,13 +65,13 @@ function App() {
           ])}
         </section>
         <section className="education-section-container">
-          <h3><span className="section-title">03 EDUCATION</span></h3>
+          <h3><span className="section-title">EDUCATION</span></h3>
           {educationBlock('Aug 2010 - Jan 2020', 'BSc. Electronic Engineering, Federal University of Technology – Paraná', 'Toledo, Paraná - Brazil')}
           {educationBlock('Jan 2017 - Jan 2020', 'BTech. System Analysis and Developement, University of Paraná', 'Toledo, Paraná - Brazil')}
           {educationBlock('Aug 2013 - Dec 2014', 'Electrical and Computer Engineering, University of Sydney', 'Sydney, NSW - Australia')}
         </section>
         <section className="skills-section-container">
-          <h3><span className="section-title">04 SKILLS</span></h3>
+          <h3><span className="section-title">SKILLS</span></h3>
           <div className="skills-grid-container">
             {skillBlock('Prototyping', 'w90')}
             {skillBlock('Front-end development', 'w80')}
