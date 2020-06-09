@@ -74,7 +74,11 @@ function App() {
           <h3><span className="section-title">SKILLS</span></h3>
           <div className="skills-grid-container">
             {skillBlock('Prototyping', 'w90')}
+            {skillBlock('Feedback acceptation', 'w90')}
             {skillBlock('Front-end development', 'w80')}
+          </div>
+          <div className="skills-grid-container">
+            {skillBlock('Teamwork', 'w80')}
             {skillBlock('Product design/analysis', 'w70')}
             {skillBlock('Project documenting', 'w60')}
           </div>
